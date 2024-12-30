@@ -1,3 +1,253 @@
 body {
   background-color: #e0d9d0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*********** typewriter hero ************/
+.typerwriter-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: 0;
+  margin-bottom: -4rem;
+}
+
+#typewriter {
+  white-space: pre; /* Bevarer linjeskift */
+  overflow: hidden;
+  display: inline-block;
+  font-size: 5.5rem; /* Gør teksten større */
+  color: #fa1e1e; /* Tekstfarve */
+  text-align: center; /* Justerer tekst centralt */
+  justify-content: center;
+  font-weight: 550;
+  font-family: "montserrat";
+}
+
+#typewriter::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 5rem;
+  background-color: #fa1e1e;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 800px) {
+  .typerwriter-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0;
+  }
+
+  #typewriter {
+    white-space: pre; /* Bevarer linjeskift */
+    overflow: hidden;
+    display: inline-block;
+    font-size: 2rem; /* Gør teksten større */
+    color: #fa1e1e; /* Tekstfarve */
+    text-align: center; /* Justerer tekst centralt */
+    justify-content: center;
+    font-weight: 550;
+  }
+
+  #typewriter::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 2rem;
+    background-color: #fa1e1e;
+    animation: blink 0.8s step-end infinite;
+  }
+}
+
+/********** Forside grid sektion1 *********/
+
+.lilletekst {
+  font-size: 15px;
+  font-family: "Inter";
+  margin-bottom: 4rem;
+  color: #312e2e;
+}
+.forside_h1 {
+  font-size: 40px;
+  font-family: "montserrat";
+  font-weight: 500;
+  color: #312e2e;
+}
+.forside_h2 {
+  font-size: 30px;
+  font-family: "montserrat";
+  font-weight: 400;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  color: #312e2e;
+}
+.forside_tekst {
+  font-size: 24px;
+  font-family: "Inter";
+  font-weight: 300;
+  color: #312e2e;
+}
+.forside_tekst1 {
+  font-size: 24px;
+  font-family: "Inter";
+  font-weight: 300;
+  margin-top: -0.5rem;
+  color: #312e2e;
+}
+
+/******** Forside knapper **************/
+.forsideknap_tema5 {
+  display: inline-block;
+  margin-top: 3rem;
+  text-decoration: none;
+  color: #fa1e1e;
+  border-bottom: 1px solid #fa1e1e;
+  font-weight: 400;
+  font-family: "Inter";
+  letter-spacing: 1px;
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.forsideknap_tema5:hover {
+  color: #312e2e;
+  border-bottom: 1px solid #312e2e;
+  transform: scale(1.1);
+}
+
+.knap {
+  margin-top: 1rem;
+  margin-left: 30px;
+  margin-bottom: 1rem;
+}
+
+/******** forside grid sekton2 ***********/
+.forsidegrid2 {
+  display: grid;
+  gap: 10px;
+  margin-inline: 8%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* gør grid responsivt ved at tilpasse antallet af kolonner til skærmens bredde.*/
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.grid-item {
+  background-color: white;
+  border: 2px solid #312e2e;
+  padding: 20px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.img_forside {
+  padding-left: 30px;
+}
+
+.grid-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: "montserrat";
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.grid-item h4 {
+  font-size: 15px;
+  font-family: "Inter";
+  margin-bottom: 2rem;
+  color: #312e2e;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+  .img_forside {
+    padding-left: 0;
+  }
+  .lilletekst {
+    font-size: 10px;
+    font-family: "Inter";
+    margin-bottom: 2.5rem;
+    color: #312e2e;
+  }
+  .forside_h1 {
+    font-size: 25px;
+    font-family: "montserrat";
+    font-weight: 500;
+    color: #312e2e;
+  }
+  .forside_h2 {
+    font-size: 17px;
+    font-family: "montserrat";
+    font-weight: 400;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+    color: #312e2e;
+  }
+  .forside_tekst {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 300;
+    color: #312e2e;
+  }
+  .forside_tekst1 {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 300;
+    margin-top: -0.5rem;
+    color: #312e2e;
+  }
+  .forsideknap_tema5 {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fa1e1e;
+    border-bottom: 1px solid #fa1e1e;
+    font-weight: 400;
+    font-family: "Inter";
+    letter-spacing: 1px;
+    transition: border 0.3s ease, color 0.3s ease;
+    font-size: 13px;
+    margin-bottom: 1rem;
+  }
+
+  .forsideknap_tema5:hover {
+    color: #312e2e;
+    border-bottom: 1px solid #312e2e;
+    transform: scale(1.1);
+  }
+
+  .knap {
+    margin-top: 1rem;
+  }
+  .grid-item h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "montserrat";
+    font-weight: 400;
+  }
+
+  .grid-item h4 {
+    font-size: 15px;
+    font-family: "Inter";
+    margin-bottom: 2rem;
+    color: #312e2e;
+    font-weight: 400;
+  }
 }

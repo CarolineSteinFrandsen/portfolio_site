@@ -1,0 +1,23 @@
+/********** Forside grid sektion **********/
+.forsidegrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-inline: 8%;
+  margin-top: 3rem;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ffff;
+  border: 2px solid #312e2e;
+}
+@media screen and (max-width: 800px) {
+  .forsidegrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 8%;
+    margin-top: -2rem;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #ffff;
+    border: 2px solid #312e2e;
+  }
+}

@@ -9,6 +9,34 @@
   background-color: #ffff;
   border: 2px solid #312e2e;
 }
+/******** om mig grid **********/
+.ommiggrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-inline: 8%;
+  margin-top: 3rem;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: #ffff;
+  border: 3px solid #312e2e;
+  margin-bottom: 2rem;
+}
+.logoCV .ommig_tekst .ommigknap {
+  grid-column: 2; /* Standard rækkefølge */
+}
+
+.billedeCV {
+  grid-column: 1; /* Standard rækkefølge */
+}
+
+/************ footer **********/
+.gridfooter_2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 0.5rem;
+  padding: 2rem;
+  margin-inline: -1.5%;
+}
 @media screen and (max-width: 800px) {
   .forsidegrid {
     display: grid;
@@ -19,5 +47,36 @@
     padding: 2rem;
     background-color: #ffff;
     border: 2px solid #312e2e;
+  }
+  .ommiggrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 8%;
+    margin-top: 2rem;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #ffff;
+    border: 2px solid #312e2e;
+  }
+  .logoCV .ommig_tekst .ommigknap {
+    grid-row: 1; /* Standard rækkefølge */
+  }
+
+  .billedeCV {
+    grid-row: 2; /* Standard rækkefølge */
+  }
+  .gridfooter_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-inline: 0%;
+  }
+  .gridfooter_3 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 3rem;
   }
 }

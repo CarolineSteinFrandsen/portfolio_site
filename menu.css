@@ -52,6 +52,7 @@ nav {
   text-align: end;
   margin-right: 3rem;
   font-family: "Inter", serif;
+  font-weight: 400;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 .ommig_menu {

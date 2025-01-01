@@ -29,6 +29,31 @@
   grid-column: 1; /* Standard rækkefølge */
 }
 
+/******** Tema 2 *********/
+.tema2_grid1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-inline: 4%;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.tema2_grid2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-inline: 4%;
+  gap: 0.5rem;
+  margin-top: 8rem;
+}
+.tema2_grid3 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-inline: 4%;
+  gap: 0.5rem;
+  margin-top: 8rem;
+  background-color: #d1cac1;
+  padding: 2rem;
+}
+
 /************ footer **********/
 .gridfooter_2 {
   display: grid;
@@ -38,6 +63,7 @@
   margin-inline: -1.5%;
 }
 @media screen and (max-width: 800px) {
+  /******* Forside *********/
   .forsidegrid {
     display: grid;
     grid-template-columns: 1fr;
@@ -48,6 +74,8 @@
     background-color: #ffff;
     border: 2px solid #312e2e;
   }
+
+  /********* Om mig *********/
   .ommiggrid {
     display: grid;
     grid-template-columns: 1fr;
@@ -65,6 +93,36 @@
   .billedeCV {
     grid-row: 2; /* Standard rækkefølge */
   }
+  .order {
+    order: -1;
+  }
+
+  /****** tema 2 *********/
+  .tema2_grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 4%;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .tema2_grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 4%;
+    gap: 0.5rem;
+    margin-top: 8rem;
+  }
+  .tema2_grid3 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-inline: 4%;
+    gap: 0.5rem;
+    margin-top: 4rem;
+    background-color: #d1cac1;
+    padding: 2rem;
+  }
+
+  /******** Footer ********/
   .gridfooter_2 {
     display: grid;
     grid-template-columns: 1fr;

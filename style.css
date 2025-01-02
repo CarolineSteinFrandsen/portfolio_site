@@ -246,6 +246,7 @@ body {
   font-weight: 400;
   margin-bottom: 6rem;
 }
+
 .grid-item_tema2 {
   background-color: white;
   border: 2px solid #312e2e;
@@ -268,23 +269,22 @@ body {
   word-spacing: -3px;
 }
 .tekst_projekt {
-  font-size: 25px;
+  font-size: 27px;
   font-family: "Inter";
   font-weight: 300;
-  line-height: 1.4;
-  text-align: justify;
+  margin-bottom: 3rem;
+  text-align: start;
+  word-spacing: normal;
   margin-right: 2rem;
-  word-spacing: -4px;
 }
 .tekst_projekt2 {
-  font-size: 25px;
+  font-size: 27px;
   font-family: "Inter";
   font-weight: 300;
-  line-height: 1.4;
-  text-align: justify;
-  margin-right: 2rem;
-  word-spacing: -4px;
   margin-bottom: 3rem;
+  text-align: start;
+  word-spacing: normal;
+  margin-right: 2rem;
 }
 .website_link {
   font-size: 20px;
@@ -311,7 +311,7 @@ body {
 .mobil_tekst2 {
   font-size: 49px;
   font-family: "Inter";
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3;
   text-align: justify;
   margin-right: 2rem;
@@ -324,7 +324,7 @@ body {
 .mobil_tekst3 {
   font-size: 49px;
   font-family: "Inter";
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3;
   text-align: justify;
   margin-right: 2rem;
@@ -360,6 +360,195 @@ body {
 }
 .knap-navigation {
   margin-bottom: 8rem;
+}
+
+/******** tema 3 *********/
+.grid-item_tema3 {
+  background-color: white;
+  border: 2px solid #fa1e1e;
+  padding: 20px;
+}
+.grid-item_tema3 img {
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  margin-left: 3rem;
+}
+.hero-tema3 {
+  display: flex;
+  background-color: white;
+  border: 2px solid #fa1e1e;
+  padding: 5px;
+  margin-inline: 4%;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.mobil_tema3-img {
+  width: 130%;
+  margin-inline: -29%;
+}
+.mobil_tekst4 {
+  font-size: 46px;
+  font-family: "Inter";
+  font-weight: 200;
+  line-height: 1.3;
+  text-align: start;
+  margin-right: 2rem;
+  word-spacing: normal;
+  margin-inline: 5%;
+  margin-left: 0rem;
+  margin-right: 4rem;
+  margin-bottom: 0;
+}
+.mobil_tekst5 {
+  font-size: 46px;
+  font-family: "Inter";
+  font-weight: 200;
+  line-height: 1.3;
+  text-align: start;
+  margin-right: 2rem;
+  word-spacing: normal;
+  margin-inline: 5%;
+  margin-left: 0rem;
+  margin-right: 4rem;
+  margin-top: -2rem;
+}
+.h2_design {
+  color: #fa1e1e;
+  font-size: 85px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  text-align: center;
+  margin-top: 10rem;
+}
+.moodboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-bottom: 12rem;
+}
+.moodboard_img {
+  width: 50%;
+  border: 3px solid #fa1e1e;
+}
+.tekst_projekt-gridtekst_1 {
+  font-size: 35px;
+  font-family: "Inter";
+  font-weight: 300;
+  margin-bottom: 12rem;
+  text-align: start;
+  word-spacing: normal;
+  margin-right: 2rem;
+  margin-inline: 11%;
+  font-weight: 200;
+  color: #fa1e1e;
+}
+.tekst_projekt-gridtekst_2 {
+  font-size: 35px;
+  font-family: "Inter";
+  font-weight: 300;
+  margin-bottom: 12rem;
+  text-align: start;
+  word-spacing: normal;
+  margin-right: 2rem;
+  margin-inline: 10%;
+  font-weight: 200;
+  color: #fa1e1e;
+}
+.overskift_projekt-gridh2 {
+  font-size: 50px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 1.4;
+  margin-right: 2rem;
+  margin-inline: 11%;
+  margin-top: 15rem;
+  color: #fa1e1e;
+}
+.overskift_projekt-gridh2_2 {
+  font-size: 50px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 1.4;
+  margin-right: 2rem;
+  margin-inline: 10%;
+  margin-top: 15rem;
+  color: #fa1e1e;
+}
+.overskift-wireframes {
+  font-family: "montserrat";
+  font-weight: 400;
+  font-size: 45px;
+  margin-left: 2rem;
+}
+
+/****** carousel *******/
+.carousel-slide img {
+  width: 20vw;
+  height: 65vh;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border: 5px solid #fa1e1e;
+}
+.carousel-container {
+  position: relative;
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 6.5rem;
+  gap: 30px;
+}
+
+.carousel-slide {
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+.billede1hover .billede2hover .billede3hover .billede4hover .billede5hover {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.container_hover {
+  position: relative;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container_hover:hover .billede1hover {
+  opacity: 0.5;
+}
+.container_hover:hover .billede2hover {
+  opacity: 0.5;
+}
+.container_hover:hover .billede3hover {
+  opacity: 0.5;
+}
+.container_hover:hover .billede4hover {
+  opacity: 0.5;
+}
+.container_hover:hover .billede5hover {
+  opacity: 0.5;
+}
+
+.container_hover:hover .middle {
+  opacity: 1;
+}
+.hovertekst {
+  color: #fa1e1e;
+  font-size: 35px;
+  font-family: "Inter";
+  font-weight: 300;
 }
 
 /********* Footer ***********/
@@ -532,6 +721,222 @@ footer {
     letter-spacing: 1px;
     transition: border 0.3s ease, color 0.3s ease;
   }
+  /********** Tema 2 *********/
+  .tema2_h3 {
+    font-size: 19px;
+    font-family: "Inter";
+    font-weight: 350;
+    margin-bottom: -1rem;
+    margin-top: 8rem;
+  }
+  .tema2_h1 {
+    font-size: 45px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-bottom: 6rem;
+  }
+  .overskift_projekt {
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-left: 0;
+    margin-left: 0.5rem;
+  }
+  .tekst_projekt {
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 300;
+    margin-bottom: 3rem;
+    text-align: start;
+    word-spacing: normal;
+    margin-right: 0;
+  }
+  .tekst_projekt2 {
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 300;
+    margin-bottom: 3rem;
+    text-align: start;
+    word-spacing: normal;
+    margin-right: 0;
+  }
+  .website_link {
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 300;
+    color: #312e2e;
+  }
+  .grid-item_tema2 img {
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin-left: 1.5rem;
+  }
+  .mobil_tema2-img {
+    width: 100%;
+    margin-inline: 0;
+    margin-top: -4rem;
+  }
+  .mobil_tekst2 {
+    font-size: 25px;
+    font-family: "Inter";
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: start;
+    margin-right: 0;
+    word-spacing: normal;
+    margin-inline: 0%;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+  }
+  .mobil_tekst3 {
+    font-size: 25px;
+    font-family: "Inter";
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: start;
+    margin-right: 0;
+    word-spacing: normal;
+    margin-inline: 0%;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .mobil_h2 {
+    margin-top: 2rem;
+  }
+  .img_tema2 {
+    width: 280%;
+  }
+  .img_tema2-2 {
+    width: 90%;
+  }
+  .navigation_tekst {
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: -1rem;
+    font-size: 22px;
+  }
+  .knap-navigation {
+    margin-bottom: 5rem;
+  }
+  .heroimg {
+    width: 100%;
+  }
+
+  /******** tema 3 *********/
+
+  .grid-item_tema3 img {
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin-left: 1.2rem;
+  }
+  .overskift_projekt3 {
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+    margin-top: -1rem;
+  }
+  .mobil_tekst4 {
+    font-size: 25px;
+    font-family: "Inter";
+    font-weight: 200;
+    line-height: 1.3;
+    text-align: start;
+    margin-right: 0;
+    word-spacing: normal;
+    margin-inline: 0%;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+  .mobil_tekst5 {
+    font-size: 25px;
+    font-family: "Inter";
+    font-weight: 200;
+    line-height: 1.3;
+    text-align: start;
+    margin-right: 0;
+    word-spacing: normal;
+    margin-inline: 0%;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
+  }
+  .h2_design {
+    color: #fa1e1e;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-top: 10rem;
+  }
+  .moodboard {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+  .moodboard_img {
+    width: 70%;
+    border: 3px solid #fa1e1e;
+  }
+  .tekst_projekt-gridtekst_1 {
+    font-size: 22px;
+    font-family: "Inter";
+    font-weight: 300;
+    margin-bottom: 3rem;
+    text-align: start;
+    word-spacing: normal;
+    margin-right: 2rem;
+    margin-inline: 5%;
+    font-weight: 200;
+    color: #fa1e1e;
+  }
+  .tekst_projekt-gridtekst_2 {
+    font-size: 22px;
+    font-family: "Inter";
+    font-weight: 300;
+    margin-bottom: 3rem;
+    text-align: start;
+    word-spacing: normal;
+    margin-right: 2rem;
+    margin-inline: 5%;
+    font-weight: 200;
+    color: #fa1e1e;
+  }
+  .overskift_projekt-gridh2 {
+    font-size: 32px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    line-height: 1.4;
+    margin-right: 2rem;
+    margin-inline: 5%;
+    margin-top: 4rem;
+    color: #fa1e1e;
+  }
+  .overskift_projekt-gridh2_2 {
+    font-size: 32px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    line-height: 1.4;
+    margin-right: 2rem;
+    margin-inline: 5%;
+    margin-top: 2rem;
+    color: #fa1e1e;
+  }
+  .overskift-wireframes {
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 28px;
+    margin-left: 1rem;
+  }
 
   /********** Footer **********/
   .text_footerleft {
@@ -576,107 +981,18 @@ footer {
     font-family: "Inter";
     margin-top: 2rem;
   }
-
-  /********** Tema 2 *********/
-  .tema2_h3 {
-    font-size: 19px;
-    font-family: "Inter";
-    font-weight: 350;
-    margin-bottom: -1rem;
-    margin-top: 8rem;
+  /****** carousel *******/
+  .carousel-slide img {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 5px solid #fa1e1e;
   }
-  .tema2_h1 {
-    font-size: 45px;
-    font-family: "Montserrat";
-    font-weight: 400;
-    margin-bottom: 6rem;
-  }
-  .overskift_projekt {
-    font-size: 30px;
-    font-family: "Montserrat";
-    font-weight: 400;
-    margin-right: 2rem;
-  }
-  .tekst_projekt {
-    font-size: 23px;
-    font-family: "Inter";
-    font-weight: 300;
-    line-height: 1.2;
-    word-spacing: -4px;
-    margin-bottom: 3rem;
-    align-content: start;
-  }
-  .tekst_projekt2 {
-    font-size: 23px;
-    font-family: "Inter";
-    font-weight: 300;
-    line-height: 1.2;
-    word-spacing: -4px;
-    margin-bottom: 3rem;
-    align-content: start;
-  }
-  .website_link {
-    font-size: 18px;
-    font-family: "Inter";
-    font-weight: 300;
-    color: #312e2e;
-  }
-  .grid-item_tema2 img {
-    justify-content: center;
-    width: 90%;
-    height: auto;
-    margin-left: 1.5rem;
-  }
-  .mobil_tema2-img {
-    width: 100%;
-    margin-inline: 0;
-    margin-top: -4rem;
-  }
-  .mobil_tekst2 {
+  .hovertekst {
+    color: #fa1e1e;
     font-size: 25px;
     font-family: "Inter";
     font-weight: 300;
-    line-height: 1.3;
-    text-align: justify;
-    margin-right: 2rem;
-    word-spacing: -4px;
-    margin-inline: 5%;
-    margin-left: 0rem;
-    margin-right: 4rem;
-  }
-  .mobil_tekst3 {
-    font-size: 25px;
-    font-family: "Inter";
-    font-weight: 300;
-    line-height: 1.3;
-    text-align: justify;
-    margin-right: 2rem;
-    word-spacing: -4px;
-    margin-inline: 5%;
-    margin-left: 0rem;
-    margin-right: 4rem;
-    margin-top: 4rem;
-  }
-  .mobil_h2 {
-    margin-top: 2rem;
-  }
-  .img_tema2 {
-    width: 280%;
-  }
-  .img_tema2-2 {
-    width: 90%;
-  }
-  .navigation_tekst {
-    font-family: "Montserrat";
-    font-weight: 400;
-    margin-top: 5rem;
-    margin-bottom: -1rem;
-    font-size: 25px;
-  }
-  .knap-navigation {
-    margin-bottom: 5rem;
-  }
-  .heroimg {
-    width: 100%;
   }
 }

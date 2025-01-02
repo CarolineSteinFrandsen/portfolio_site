@@ -47,11 +47,21 @@
 .tema2_grid3 {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  margin-inline: 4%;
+  margin-inline: 0%;
   gap: 0.5rem;
   margin-top: 8rem;
   background-color: #d1cac1;
   padding: 2rem;
+}
+
+/********* tema 3 *********/
+.tema3_grid2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-inline: 0%;
+  gap: 0.5rem;
+  margin-top: 8rem;
+  background-color: #d1cac1;
 }
 
 /************ footer **********/
@@ -115,11 +125,20 @@
   .tema2_grid3 {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    margin-inline: 4%;
+    margin-inline: 1%;
     gap: 0.5rem;
     margin-top: 4rem;
     background-color: #d1cac1;
     padding: 2rem;
+  }
+  /********* Tema 3*******/
+  .tema3_grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 1%;
+    gap: 0.5rem;
+    margin-top: 8rem;
+    background-color: #d1cac1;
   }
 
   /******** Footer ********/

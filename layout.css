@@ -14,12 +14,12 @@
   display: grid;
   grid-template-columns: 2fr 2fr;
   margin-inline: 8%;
-  margin-top: 3rem;
+  margin-top: 4rem;
   gap: 2rem;
-  padding: 4rem;
+  padding: 5rem;
   background-color: #ffff;
   border: 3px solid #312e2e;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .logoCV .ommig_tekst .ommigknap {
   grid-column: 2; /* Standard rækkefølge */
@@ -49,7 +49,7 @@
   grid-template-columns: 2fr 2fr;
   margin-inline: 0%;
   gap: 0.5rem;
-  margin-top: 8rem;
+  margin-top: 0rem;
   background-color: #d1cac1;
   padding: 2rem;
 }
@@ -62,6 +62,23 @@
   gap: 0.5rem;
   margin-top: 8rem;
   background-color: #d1cac1;
+}
+/****** Tema 4********/
+.tema4_grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tre kolonner */
+  gap: 80px;
+  background-color: #d1cac1;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-inline: 4%;
+}
+.tema3_grid2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-inline: 4%;
+  gap: 0.5rem;
+  margin-top: 8rem;
 }
 
 /************ footer **********/
@@ -139,6 +156,17 @@
     gap: 0.5rem;
     margin-top: 8rem;
     background-color: #d1cac1;
+  }
+
+  /******** Tema 4 ******/
+  .tema4_grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Tre kolonner */
+    gap: 0px;
+    background-color: #d1cac1;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-inline: 0%;
   }
 
   /******** Footer ********/

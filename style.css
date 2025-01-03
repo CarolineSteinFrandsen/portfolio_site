@@ -431,6 +431,17 @@ body {
   width: 50%;
   border: 3px solid #fa1e1e;
 }
+.logo_tema3 {
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  width: 550px;
+  margin-left: 5rem;
+}
+.color {
+  background-color: #d1cac1;
+  margin-top: 4rem;
+}
 .tekst_projekt-gridtekst_1 {
   font-size: 35px;
   font-family: "Inter";
@@ -549,6 +560,52 @@ body {
   font-size: 35px;
   font-family: "Inter";
   font-weight: 300;
+}
+/******* Tema 4 *********/
+.tema4mb {
+  width: 45%;
+}
+.logo4 {
+  width: 750px;
+}
+.img_1 {
+  margin-left: 3rem;
+}
+
+.img_4 {
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+.img_5 {
+  margin-left: 1rem;
+}
+.img_6 {
+  margin-right: 30rem;
+}
+.img_7 {
+  margin-left: 2rem;
+  width: 80%;
+  margin-top: -1rem;
+}
+.img_8 {
+  margin-top: -1.5rem;
+}
+.grid-item_tema4 {
+  background-color: #ffff;
+  border: 2px solid #fa1e1e;
+  padding: 20px;
+}
+.grid-item_tema4 img {
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  margin-left: 3rem;
+}
+.img_aktivitet {
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-left: 3rem;
 }
 
 /********* Footer ***********/
@@ -825,6 +882,18 @@ footer {
   .heroimg {
     width: 100%;
   }
+  .logo_tema3 {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 200px;
+    margin-left: 3rem;
+  }
+  .color {
+    background-color: #d1cac1;
+    margin-top: 4rem;
+    margin-bottom: -9rem;
+  }
 
   /******** tema 3 *********/
 
@@ -869,6 +938,10 @@ footer {
     margin-top: -0.5rem;
     margin-bottom: 3rem;
   }
+  .mobil_tema3-img {
+    width: 130%;
+    margin-inline: -14%;
+  }
   .h2_design {
     color: #fa1e1e;
     font-size: 50px;
@@ -877,6 +950,7 @@ footer {
     text-align: center;
     margin-top: 10rem;
   }
+
   .moodboard {
     display: flex;
     justify-content: center;
@@ -935,6 +1009,57 @@ footer {
     font-family: "montserrat";
     font-weight: 400;
     font-size: 28px;
+    margin-left: 1rem;
+  }
+
+  /******* Tema 4 *******/
+  .img_1 {
+    margin-left: 0rem;
+    width: 80%;
+    padding-top: 2rem;
+  }
+  .img_2 {
+    width: 27%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+  }
+  .img_3 {
+    width: 74%;
+    margin-top: 2rem;
+  }
+
+  .img_4 {
+    margin-left: 5rem;
+    margin-top: 4rem;
+    margin-right: 5rem;
+  }
+  .img_5 {
+    margin-right: 2rem;
+    width: 145%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .img_6 {
+    margin-right: 0rem;
+    width: 64%;
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  .img_7 {
+    margin-left: 0rem;
+    width: 161%;
+    margin-top: 0rem;
+    padding-bottom: 2rem;
+  }
+  .img_8 {
+    margin-top: 0rem;
+    width: 64%;
+    margin-left: 5rem;
+    padding-bottom: 2rem;
+  }
+  .logo4 {
+    width: 350px;
     margin-left: 1rem;
   }
 

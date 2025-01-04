@@ -31,7 +31,7 @@
 }
 
 /******** Tema 2 *********/
-.tema2_grid1 {
+.tema_grid1 {
   display: grid;
   grid-template-columns: 2fr 2fr;
   margin-inline: 4%;
@@ -43,20 +43,20 @@
   grid-template-columns: 3fr 2fr;
   margin-inline: 4%;
   gap: 0.5rem;
-  margin-top: 8rem;
+  margin-top: 12rem;
 }
 .tema2_grid3 {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  margin-inline: 0%;
+  margin-inline: 4%;
   gap: 0.5rem;
-  margin-top: 0rem;
+  margin-top: 10rem;
   background-color: #d1cac1;
   padding: 2rem;
 }
 
 /********* tema 3 *********/
-.tema3_grid2 {
+.tema2-3-4_grid2 {
   display: grid;
   grid-template-columns: 3fr 2fr;
   margin-inline: 0%;
@@ -74,27 +74,50 @@
   padding-bottom: 5rem;
   margin-inline: 4%;
 }
-.tema3_grid2 {
+.tema2-3-4_grid3 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-inline: 4%;
+  gap: 0.5rem;
+  margin-top: 0rem;
+  background-color: #d1cac1;
+}
+.tema4_gridstate {
   display: grid;
   grid-template-columns: 2fr 2fr;
   margin-inline: 4%;
   gap: 0.5rem;
   margin-top: 8rem;
+  background-color: #d1cac1;
+}
+
+/****** Tema 5 passions site *******/
+.video_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 kolonner på desktop */
+  gap: 20px;
+  padding: 20px;
+  margin-inline: 2.8%;
+  margin-top: 8rem;
+  background-color: #d1cac1;
+  margin-bottom: 5rem;
+  padding-top: 3rem;
 }
 
 /************ footer **********/
 .gridfooter_2 {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr; /* 2 kolonner på desktop */
+  grid-template-rows: auto auto auto;
   gap: 0.5rem;
   margin-inline: -0.2%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   /******* Forside *********/
   .forsidegrid {
     display: grid;
     grid-template-columns: 1fr;
-    margin-inline: 8%;
+    margin-inline: 4%;
     margin-top: -2rem;
     gap: 2rem;
     padding: 2rem;
@@ -106,12 +129,15 @@
   .ommiggrid {
     display: grid;
     grid-template-columns: 1fr;
-    margin-inline: 8%;
+    margin-inline: 4%;
     margin-top: 2rem;
     gap: 2rem;
     padding: 2rem;
     background-color: #ffff;
     border: 2px solid #312e2e;
+  }
+  .forsidegrid2 {
+    margin-inline: 4%;
   }
   .logoCV .ommig_tekst .ommigknap {
     grid-row: 1; /* Standard rækkefølge */
@@ -125,7 +151,7 @@
   }
 
   /****** tema 2 *********/
-  .tema2_grid1 {
+  .tema_grid1 {
     display: grid;
     grid-template-columns: 1fr;
     margin-inline: 4%;
@@ -139,23 +165,33 @@
     gap: 0.5rem;
     margin-top: 8rem;
   }
-  .tema2_grid3 {
+  .tema2-3-4_grid3 {
     display: grid;
     grid-template-columns: 2fr 2fr;
     margin-inline: 1%;
     gap: 0.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     background-color: #d1cac1;
     padding: 2rem;
   }
   /********* Tema 3*******/
-  .tema3_grid2 {
+  .tema2-3-4_grid2 {
     display: grid;
     grid-template-columns: 1fr;
     margin-inline: 1%;
     gap: 0.5rem;
     margin-top: 8rem;
     background-color: #d1cac1;
+    padding-top: 3rem;
+  }
+  .tema2_grid3 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-inline: 4%;
+    gap: 0.5rem;
+    margin-top: 5rem;
+    background-color: #d1cac1;
+    padding: 2rem;
   }
 
   /******** Tema 4 ******/
@@ -168,6 +204,36 @@
     padding-bottom: 0rem;
     margin-inline: 0%;
   }
+  .tema4_gridstate {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 1%;
+    gap: 0.5rem;
+    margin-top: 4rem;
+    background-color: #d1cac1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /******* Passionssite tema 5 *******/
+  .video_container {
+    grid-template-columns: 1fr; /* Kun én kolonne på mobil */
+    grid-template-rows: auto auto; /* Hver række får automatisk højde */
+    margin-top: 5rem;
+  }
+
+  /* Juster rækkefølgen af elementerne på mobil */
+  .text-video {
+    order: 1; /* Tekst vises først */
+  }
+
+  .billede_video {
+    order: 2; /* Billede vises efter tekst */
+  }
+
+  .video {
+    order: 3; /* Video vises sidst */
+  }
 
   /******** Footer ********/
   .gridfooter_2 {
@@ -175,7 +241,7 @@
     grid-template-columns: 1fr;
     gap: 0.5rem;
     padding: 0.5rem;
-    margin-inline: 0%;
+    margin-inline: -1.5%;
   }
   .gridfooter_3 {
     display: grid;
@@ -183,5 +249,8 @@
     gap: 0.5rem;
     padding: 0.5rem;
     padding-bottom: 3rem;
+  }
+  .footer-grid-item1 {
+    margin-inline: -1.5%;
   }
 }

@@ -1,7 +1,7 @@
 /********** Forside grid sektion **********/
 .forsidegrid {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-inline: 8%;
   margin-top: 3rem;
   gap: 2rem;
@@ -9,6 +9,7 @@
   background-color: #ffff;
   border: 2px solid #312e2e;
 }
+
 /******** om mig grid **********/
 .ommiggrid {
   display: grid;
@@ -16,7 +17,7 @@
   margin-inline: 8%;
   margin-top: 4rem;
   gap: 2rem;
-  padding: 5rem;
+  padding: 3rem;
   background-color: #ffff;
   border: 3px solid #312e2e;
   margin-bottom: 4rem;
@@ -86,8 +87,7 @@
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 0.5rem;
-  padding: 2rem;
-  margin-inline: -1.5%;
+  margin-inline: -0.2%;
 }
 @media screen and (max-width: 800px) {
   /******* Forside *********/
@@ -161,7 +161,7 @@
   /******** Tema 4 ******/
   .tema4_grid1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Tre kolonner */
+    grid-template-columns: 2fr 2fr 1fr;
     gap: 0px;
     background-color: #d1cac1;
     padding-top: 0rem;

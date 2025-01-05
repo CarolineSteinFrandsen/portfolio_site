@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: 2fr 2fr;
   margin-inline: 8%;
-  margin-top: 4rem;
+  margin-top: 13rem;
   gap: 2rem;
   padding: 3rem;
   background-color: #ffff;
@@ -61,7 +61,7 @@
   grid-template-columns: 3fr 2fr;
   margin-inline: 0%;
   gap: 0.5rem;
-  margin-top: 8rem;
+  margin-top: 12rem;
   background-color: #d1cac1;
 }
 /****** Tema 4********/
@@ -89,6 +89,22 @@
   gap: 0.5rem;
   margin-top: 8rem;
   background-color: #d1cac1;
+}
+
+.tema5_grid3 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-inline: 4%;
+  gap: 0.5rem;
+  margin-top: 0rem;
+  background-color: #ffff;
+}
+.wireframes_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolonner */
+  gap: 10px; /* Mellemrum mellem billederne */
+  width: 100%; /* Containerens bredde */
+  padding-bottom: 5rem;
 }
 
 /****** Tema 5 passions site *******/
@@ -130,7 +146,7 @@
     display: grid;
     grid-template-columns: 1fr;
     margin-inline: 4%;
-    margin-top: 2rem;
+    margin-top: 12rem;
     gap: 2rem;
     padding: 2rem;
     background-color: #ffff;
@@ -215,6 +231,23 @@
     padding-bottom: 1rem;
   }
 
+  /********** Tema 5 *************/
+  .tema5_grid3 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-inline: 1%;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    background-color: #ffff;
+    padding: 2rem;
+  }
+  .wireframes_grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner på mobil */
+    gap: 5px;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
   /******* Passionssite tema 5 *******/
   .video_container {
     grid-template-columns: 1fr; /* Kun én kolonne på mobil */
@@ -226,13 +259,16 @@
   .text-video {
     order: 1; /* Tekst vises først */
   }
+  .youtube_container {
+    order: 2;
+  }
 
   .billede_video {
-    order: 2; /* Billede vises efter tekst */
+    order: 3; /* Billede vises efter tekst */
   }
 
   .video {
-    order: 3; /* Video vises sidst */
+    order: 4; /* Video vises sidst */
   }
 
   /******** Footer ********/

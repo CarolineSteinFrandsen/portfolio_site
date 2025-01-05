@@ -1,15 +1,18 @@
 header {
-  position: sticky;
+  position: fixed; /* Gør headeren fast */
   top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 3rem;
+  padding-block: 2rem;
   background-color: #e0d9d0;
-  box-shadow: 0 2px 2px #312e2e;
-  /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 1px 1px #312e2e;
   z-index: 10;
+  transition: transform 0.3s ease-in-out; /* Gør skjul-effekten glidende */
 }
+
 .logo {
   width: 250px;
   margin-left: 2rem;
@@ -25,19 +28,28 @@ header {
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Forhindrer linjeskift */
+  width: 100%;
+  overflow: hidden; /* Sikrer, at alt bliver inden for headeren */
+  justify-content: space-between;
 }
 
 .menu {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin-left: auto; /* Skubber menuen til højre */
   padding: 0;
   color: #787a91;
   font-weight: bold;
+  flex-wrap: nowrap; /* Sørger for, at menuen forbliver på én linje */
+  gap: 40px; /* Giver lidt afstand mellem punkterne */
+  padding-right: 2rem;
 }
 
 .menu li {
   margin-right: 20px;
+  white-space: nowrap; /* Sikrer, at teksten ikke brydes */
 }
 
 .menu li:last-child {
@@ -46,18 +58,18 @@ nav {
 
 .menu a {
   display: block;
-  padding: 30px;
+  padding: 15px;
   color: #312e2e;
   text-decoration: none;
-  text-align: end;
-  margin-right: 3rem;
   font-family: "Inter", serif;
   font-weight: 400;
   transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 18px;
 }
 .ommig_menu {
   /* margin-left: px; */
-  font-size: 20px;
+  font-size: 30px;
+  color: #fa1e1e;
 }
 
 .center {
@@ -86,6 +98,13 @@ nav {
 }
 .burger {
   display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem; /* Sørger for, at burger-menuen ligger til højre */
+  top: 50%;
+  transform: translateY(-50%); /* Centrerer den vertikalt */
 }
 @media screen and (max-width: 800px) {
   .menu {
@@ -111,7 +130,9 @@ nav {
   }
 
   nav.active .menu {
-    display: block;
+    display: flex; /* Ændret fra block til flex */
+    flex-direction: column; /* Gør den vertikal */
+    align-items: center;
     background-color: #e0d9d0;
     position: absolute;
     top: 94px;
@@ -127,5 +148,21 @@ nav {
 
   nav.active .menu a {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu a {
+    font-size: 14px; /* Mindre tekst på små skærme */
+    padding: 10px; /* Mindre padding */
+  }
+
+  .menu {
+    gap: 5px; /* Mindre mellemrum mellem menupunkterne */
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none; /* Skjul menuen på mobil */
   }
 }

@@ -15,7 +15,8 @@ body {
   align-items: center;
   height: 40vh;
   margin: 0;
-  margin-bottom: -4rem;
+  margin-top: 10rem;
+  margin-bottom: 0rem;
 }
 
 #typewriter {
@@ -50,7 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 30vh;
-    margin: 0;
+    margin-top: 5rem;
   }
 
   #typewriter {
@@ -258,7 +259,7 @@ body {
   font-family: "Inter";
   font-weight: 350;
   margin-bottom: -1rem;
-  margin-top: 8rem;
+  margin-top: 15rem;
 }
 .tema_h1 {
   font-size: 70px;
@@ -355,7 +356,7 @@ body {
   margin-bottom: -1rem;
 }
 .styletileimg {
-  margin-top: 5rem;
+  margin-top: 2rem;
   align-content: center;
 }
 .styletileimg2 {
@@ -448,8 +449,8 @@ body {
 }
 .logo_tema3 {
   display: flex;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   width: 25%;
   margin-left: 5rem;
 }
@@ -586,10 +587,10 @@ body {
   margin-left: 2rem;
 }
 .img_tema2 {
-  width: 200%;
+  width: 185%;
 }
 .img_tema2-2 {
-  width: 65%;
+  width: 58%;
 }
 .img_1 {
   margin-left: 3rem;
@@ -648,6 +649,122 @@ body {
   word-spacing: normal;
   margin-right: 2rem;
 }
+
+/********* Tema 5 **************/
+
+.grid-item_tema5 img {
+  width: 70%;
+  height: auto;
+  padding-left: 0;
+  margin-left: 7rem;
+}
+.mobil_tekst6 {
+  font-size: 43px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: start;
+  word-spacing: normal;
+  margin-inline: 5%;
+  margin-left: 0rem;
+  margin-right: 6rem;
+  margin-bottom: 0;
+  margin-top: 23rem;
+  color: #fa1e1e;
+}
+.logo5 {
+  width: 15%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.color2 {
+  background-color: #ffff;
+  margin-top: 4rem;
+  margin-inline: 4%;
+  padding-top: 1rem;
+}
+.logo_tema5 {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.billede_wireframes {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Sørger for at teksten ikke går udenfor billedet */
+  transition: all 0.3s ease; /* Overgange for effekterne */
+  position: relative;
+}
+
+.billede_wireframes img {
+  max-width: 100%; /* Billederne fylder ikke mere end containerens bredde */
+  height: auto;
+  border: 3px solid #fa1e1e;
+  transition: opacity 0.5s ease;
+}
+.hover-text_wireframes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fa1e1e;
+  font-size: 24px;
+  font-weight: 300;
+  opacity: 0; /* Start skjult */
+  transition: opacity 0.3s ease; /* Gør teksten synlig ved hover */
+  font-family: "Inter";
+}
+.billede_wireframes:hover img {
+  opacity: 0.5; /* Gør billedet lettere ved hover */
+}
+
+.billede_wireframes:hover .hover-text_wireframes {
+  opacity: 1; /* Gør teksten synlig ved hover */
+}
+.overskift-wireframes2 {
+  font-family: "montserrat";
+  font-weight: 400;
+  font-size: 45px;
+  margin-left: 1rem;
+}
+.tekst_videoindhold {
+  font-size: 30px;
+  font-family: "Inter";
+  color: #fa1e1e;
+  font-weight: 200;
+  margin-right: 56rem;
+  margin-left: 2rem;
+}
+.videoindhold_knap {
+  display: inline-block;
+  text-decoration: none;
+  color: #fa1e1e;
+  border-bottom: 1.5px solid #fa1e1e;
+  font-weight: 400;
+  font-family: "Inter";
+  letter-spacing: 1px;
+  transition: border 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 8rem;
+}
+
+.videoindhold_knap:hover {
+  color: #312e2e;
+  border-bottom: 1.5px solid #312e2e;
+  transform: scale(1.1);
+}
+.h2_videoindhold {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #fa1e1e;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
 /******** passions site tema 5 **********/
 
 /* Styling for billede */
@@ -680,6 +797,25 @@ body {
   font-size: 23px;
   font-weight: 300;
   font-family: "Inter";
+}
+.link_youtube-h2 {
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 25px;
+}
+.website_link_video {
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: #312e2e;
+}
+.website_link_video:hover {
+  color: #fa1e1e;
+}
+.youtube_container {
+  text-align: center;
+  margin-top: 7rem;
 }
 
 /********* Footer ***********/
@@ -874,7 +1010,7 @@ footer {
     font-family: "Inter";
     font-weight: 350;
     margin-bottom: -1rem;
-    margin-top: 3rem;
+    margin-top: 12rem;
   }
   .tema_h1 {
     font-size: 30px;
@@ -926,7 +1062,7 @@ footer {
   .mobil_tekst2 {
     font-size: 23px;
     font-family: "Inter";
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.3;
     text-align: start;
     margin-right: 0;
@@ -938,7 +1074,7 @@ footer {
   .mobil_tekst3 {
     font-size: 23px;
     font-family: "Inter";
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.3;
     text-align: start;
     margin-right: 0;
@@ -1033,6 +1169,7 @@ footer {
   .mobil_tema3-img {
     width: 130%;
     margin-inline: -14%;
+    margin-top: -3rem;
   }
   .h2_design {
     color: #fa1e1e;
@@ -1181,10 +1318,112 @@ footer {
     margin-right: 2rem;
   }
 
+  /******* Tema 5 ************/
+  .grid-item_tema5 img {
+    width: 80%;
+    height: auto;
+    padding-left: 0;
+    margin-left: 2rem;
+  }
+  .mobil_tekst6 {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: start;
+    word-spacing: normal;
+    margin-inline: 5%;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+  }
+  .color2 {
+    margin-top: 2rem;
+    margin-bottom: -5rem;
+    margin-inline: 1%;
+  }
+  .logo5 {
+    width: 18%;
+  }
+  .logo_tema5 {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .billede_wireframes {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .billede_wireframes img {
+    max-width: 100%; /* Billederne fylder ikke mere end containerens bredde */
+    height: auto;
+    border: 3px solid #fa1e1e;
+  }
+  .overskift-wireframes2 {
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 27px;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .hover-text_wireframes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fa1e1e;
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0; /* Start skjult */
+    transition: opacity 0.3s ease; /* Gør teksten synlig ved hover */
+    font-family: "Inter";
+  }
+  .tekst_videoindhold {
+    font-size: 18px;
+    font-family: "Inter";
+    color: #fa1e1e;
+    font-weight: 200;
+    margin-right: 5rem;
+    margin-left: 1rem;
+  }
+  .videoindhold_knap {
+    display: inline-block;
+    text-decoration: none;
+    color: #fa1e1e;
+    border-bottom: 1.5px solid #fa1e1e;
+    font-weight: 400;
+    font-family: "Inter";
+    letter-spacing: 1px;
+    transition: border 0.3s ease, color 0.3s ease;
+    font-size: 12px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .videoindhold_knap:hover {
+    color: #312e2e;
+    border-bottom: 1.5px solid #312e2e;
+    transform: scale(1.1);
+  }
+  .h2_videoindhold {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    color: #fa1e1e;
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+
   /****** Passionssite tema 5 ******/
   .h2_video {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 500;
     font-family: "Montserrat";
     margin-top: -1rem;
   }
@@ -1197,6 +1436,18 @@ footer {
     font-size: 17px;
     font-weight: 300;
     font-family: "Inter";
+  }
+  .link_youtube-h2 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+  .website_link_video {
+    font-size: 14px;
+  }
+  .youtube_container {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
   }
 
   /********** Footer **********/

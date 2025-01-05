@@ -45,37 +45,6 @@ body {
     background-color: transparent;
   }
 }
-@media screen and (max-width: 768px) {
-  .typerwriter-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    margin-top: 5rem;
-  }
-
-  #typewriter {
-    white-space: pre; /* Bevarer linjeskift */
-    overflow: hidden;
-    display: inline-block;
-    font-size: 28px; /* Gør teksten større */
-    color: #fa1e1e; /* Tekstfarve */
-    text-align: center; /* Justerer tekst centralt */
-    justify-content: center;
-    font-weight: 550;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  #typewriter::after {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 2rem;
-    background-color: #fa1e1e;
-    animation: blink 0.8s step-end infinite;
-  }
-}
 
 /********** Forside grid sektion1 *********/
 
@@ -585,6 +554,7 @@ body {
   width: 35%;
   margin-left: 2rem;
 }
+
 .img_tema2 {
   width: 185%;
 }
@@ -1300,6 +1270,35 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .typerwriter-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-top: 5rem;
+  }
+
+  #typewriter {
+    white-space: pre; /* Bevarer linjeskift */
+    overflow: hidden;
+    display: inline-block;
+    font-size: 1.7rem; /* Gør teksten større */
+    color: #fa1e1e; /* Tekstfarve */
+    text-align: center; /* Justerer tekst centralt */
+    justify-content: center;
+    font-weight: 550;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  #typewriter::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 2rem;
+    background-color: #fa1e1e;
+    animation: blink 0.8s step-end infinite;
+  }
   .img_forside {
     padding-left: 0;
   }
@@ -1544,7 +1543,7 @@ footer {
     justify-content: center;
     width: 90%;
     height: auto;
-    margin-left: -1rem;
+    margin-left: 1rem;
   }
   .overskift_projekt3 {
     font-size: 25px;
@@ -1662,7 +1661,7 @@ footer {
   /******* Tema 4 *******/
   .img_1 {
     margin-left: 0.8rem;
-    margin-bottom: -1rem;
+    margin-bottom: -3rem;
     width: 18%;
     padding-top: 2rem;
   }
@@ -1674,7 +1673,7 @@ footer {
 
   .img_3 {
     margin-left: -1rem;
-    width: 35%;
+    width: 39%;
     margin-top: 2rem;
   }
 

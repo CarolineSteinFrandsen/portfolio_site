@@ -1,7 +1,7 @@
 /********** Forside grid sektion **********/
 .forsidegrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
   margin-inline: 8%;
   margin-top: 3rem;
   gap: 2rem;
@@ -64,6 +64,14 @@
   margin-top: 12rem;
   background-color: #d1cac1;
 }
+.tema3_gridlayout {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-inline: 4%;
+  gap: 0.5rem;
+  margin-top: 15rem;
+  background-color: #d1cac1;
+}
 /****** Tema 4********/
 .tema4_grid1 {
   display: grid;
@@ -91,6 +99,8 @@
   background-color: #d1cac1;
 }
 
+/********** Tema 5 **************/
+
 .tema5_grid3 {
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -102,7 +112,7 @@
 .wireframes_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 kolonner */
-  gap: 10px; /* Mellemrum mellem billederne */
+  gap: 10px;
   width: 100%; /* Containerens bredde */
   padding-bottom: 5rem;
 }
@@ -110,7 +120,7 @@
 /****** Tema 5 passions site *******/
 .video_container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 kolonner på desktop */
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px;
   margin-inline: 2.8%;

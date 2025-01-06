@@ -1,16 +1,16 @@
 header {
-  position: fixed; /* Gør headeren fast */
+  position: fixed; /* fast */
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* højre/venstre*/
   align-items: center;
   padding-block: 2rem;
   background-color: #e0d9d0;
   box-shadow: 0 1px 1px #312e2e;
-  z-index: 10;
-  transition: transform 0.3s ease-in-out; /* Gør skjul-effekten glidende */
+  z-index: 10; /* øverst*/
+  transition: transform 0.3s ease-in-out; /* ani skjul-effekten */
 }
 
 .logo {
@@ -18,41 +18,36 @@ header {
   margin-left: 2rem;
 }
 
-@media screen and (max-width: 800px) {
-  .logo {
-    width: 170px;
-    margin-left: 2rem;
-  }
-}
-
 nav {
+  /* menupunkter*/
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap; /* Forhindrer linjeskift */
+  flex-wrap: nowrap; /* % linjeskift */
   width: 100%;
-  overflow: hidden; /* Sikrer, at alt bliver inden for headeren */
+  overflow: hidden; /* inden for headeren */
   justify-content: space-between;
 }
 
 .menu {
   display: flex;
   list-style: none;
-  margin-left: auto; /* Skubber menuen til højre */
+  margin-left: auto; /* menuen til højre */
   padding: 0;
   color: #787a91;
   font-weight: bold;
-  flex-wrap: nowrap; /* Sørger for, at menuen forbliver på én linje */
-  gap: 40px; /* Giver lidt afstand mellem punkterne */
+  flex-wrap: nowrap; /* én linje */
+  gap: 40px;
   padding-right: 2rem;
 }
 
 .menu li {
   margin-right: 20px;
-  white-space: nowrap; /* Sikrer, at teksten ikke brydes */
+  white-space: nowrap; /* % brydes */
 }
 
 .menu li:last-child {
+  /*menupunkt*/
   margin-right: 0;
 }
 
@@ -61,9 +56,9 @@ nav {
   padding: 15px;
   color: #312e2e;
   text-decoration: none;
-  font-family: "Inter", serif;
+  font-family: "Inter";
   font-weight: 400;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease; /* hover */
   font-size: 18px;
 }
 .ommig_menu {
@@ -83,59 +78,76 @@ nav {
   transform: scale(1.1);
 }
 
-.burger {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
 .burger .line {
   width: 100%;
   height: 2px;
   background-color: #fa1e1e;
   margin-bottom: 5px;
-  transition: 0.2s linear;
+  transition: 0.2s linear; /* ani*/
 }
 .burger {
-  display: none;
+  display: none; /* % store skærme */
   width: 30px;
   height: 20px;
   cursor: pointer;
   position: absolute;
-  right: 2rem; /* Sørger for, at burger-menuen ligger til højre */
+  right: 2rem; /* til højre */
   top: 50%;
-  transform: translateY(-50%); /* Centrerer den vertikalt */
+  transform: translateY(-50%); /* Centrerer vertikalt */
 }
-@media screen and (max-width: 800px) {
+
+/********************************************* media **************************************/
+
+@media screen and (max-width: 1024px) {
+  .menu a {
+    font-size: 14px; /* Mindre tekst på små skærme */
+    padding: 10px; /* Mindre padding */
+  }
+
   .menu {
-    display: none;
+    gap: 5px; /* Mindre mellemrum mellem menupunkterne */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 170px;
+    margin-left: 2rem;
+  }
+
+  .menu {
+    display: none; /* skjul */
   }
   .burger {
+    /* vises */
     display: block;
     margin-right: 1rem;
   }
   .burger.active .line:nth-child(1) {
+    /* burger linjer */
     transform: rotate(45deg) translate(5px, 5px);
     transition: 0.2s linear;
   }
 
   .burger.active .line:nth-child(2) {
+    /* burger linjer */
     opacity: 0;
     transition: 0.15s linear;
   }
 
   .burger.active .line:nth-child(3) {
+    /* burger linjer */
     transform: rotate(-45deg) translate(5px, -5px);
     transition: 0.2s linear;
   }
 
   nav.active .menu {
-    display: flex; /* Ændret fra block til flex */
-    flex-direction: column; /* Gør den vertikal */
+    display: flex; /* fra block til flex */
+    flex-direction: column; /* vertikal */
     align-items: center;
     background-color: #e0d9d0;
     position: absolute;
-    top: 94px;
+    top: 94px; /* under header */
     left: 0;
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -147,22 +159,6 @@ nav {
   }
 
   nav.active .menu a {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .menu a {
-    font-size: 14px; /* Mindre tekst på små skærme */
-    padding: 10px; /* Mindre padding */
-  }
-
-  .menu {
-    gap: 5px; /* Mindre mellemrum mellem menupunkterne */
-  }
-}
-@media screen and (max-width: 800px) {
-  .menu {
-    display: none; /* Skjul menuen på mobil */
+    font-size: 14px;
   }
 }

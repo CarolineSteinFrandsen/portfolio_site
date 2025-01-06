@@ -254,6 +254,27 @@
     background-color: #d1cac1;
     padding: 2rem;
   }
+  .tema4_gridstate {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 1%;
+    gap: 0.5rem;
+    margin-top: 4rem;
+    background-color: #d1cac1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .tema3_gridlayout {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 4%;
+    gap: 0.5rem;
+    margin-top: 5rem;
+    background-color: #d1cac1;
+  }
+  .order_lay {
+    order: 1;
+  }
 
   /******** Tema 4 ******/
   .tema4_grid1 {

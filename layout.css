@@ -1,3 +1,5 @@
+/******************************************* Desktop *****************************************************/
+
 /********** Forside grid sektion **********/
 .forsidegrid {
   display: grid;
@@ -8,6 +10,16 @@
   padding: 2rem;
   background-color: #ffff;
   border: 2px solid #312e2e;
+}
+/******** forside grid sekton2 ***********/
+.forsidegrid2 {
+  display: grid;
+  gap: 9px;
+  margin-inline: 8%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* gør grid responsivt antal col skærm bred*/
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
 }
 
 /******** om mig grid **********/
@@ -69,7 +81,7 @@
   grid-template-columns: 2fr 2fr;
   margin-inline: 4%;
   gap: 0.5rem;
-  margin-top: 15rem;
+  margin-top: 12rem;
   background-color: #d1cac1;
 }
 /****** Tema 4********/
@@ -108,6 +120,7 @@
   gap: 0.5rem;
   margin-top: 0rem;
   background-color: #ffff;
+  padding-bottom: 3rem;
 }
 .wireframes_grid {
   display: grid;
@@ -129,6 +142,17 @@
   margin-bottom: 5rem;
   padding-top: 3rem;
 }
+.lotti_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-inline: 4%;
+  margin-top: 3rem;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ffff;
+  border: 2px solid#fa1e1e;
+  margin-bottom: 10rem;
+}
 
 /************ footer **********/
 .gridfooter_2 {
@@ -139,9 +163,11 @@
   margin-inline: -0.2%;
 }
 
-/********************************************************** Media *********************************************/
+/********************************************************** Media ***************************************************************/
 
-@media screen and (max-width: 1024px) {
+/***************************************************** små tablet og tablets størrelse *********************/
+
+@media (min-width: 769px) and (max-width: 1024px) {
   /********** Forside grid sektion **********/
   .forsidegrid {
     display: grid;
@@ -171,7 +197,20 @@
     border: 3px solid #312e2e;
     margin-bottom: 4rem;
   }
+  .lotti_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-inline: 4%;
+    margin-top: 3rem;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #ffff;
+    border: 2px solid#fa1e1e;
+    margin-bottom: 10rem;
+  }
 }
+
+/******************************************************* mobil ***********************************/
 
 @media screen and (max-width: 768px) {
   /******* Forside *********/
@@ -201,17 +240,18 @@
     margin-inline: 4%;
   }
   .logoCV .ommig_tekst .ommigknap {
-    grid-row: 1; /* Standard rækkefølge */
+    /* rækkefølge */
+    grid-row: 1;
   }
 
   .billedeCV {
-    grid-row: 2; /* Standard rækkefølge */
+    grid-row: 2;
   }
   .order {
     order: -1;
   }
 
-  /****** tema 2 *********/
+  /****** tema 2 *************************/
   .tema_grid1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -235,7 +275,8 @@
     background-color: #d1cac1;
     padding: 2rem;
   }
-  /********* Tema 3*******/
+
+  /********* Tema 3************************/
   .tema2-3-4_grid2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -276,7 +317,7 @@
     order: 1;
   }
 
-  /******** Tema 4 ******/
+  /******** Tema 4 ****************************/
   .tema4_grid1 {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
@@ -297,7 +338,7 @@
     padding-bottom: 1rem;
   }
 
-  /********** Tema 5 *************/
+  /********** Tema 5 *******************************/
   .tema5_grid3 {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -308,36 +349,46 @@
     padding: 2rem;
   }
   .wireframes_grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolonner på mobil */
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     width: 100%;
     padding-bottom: 4rem;
   }
 
-  /******* Passionssite tema 5 *******/
+  /******* Passionssite tema 5 ***************************/
   .video_container {
-    grid-template-columns: 1fr; /* Kun én kolonne på mobil */
-    grid-template-rows: auto auto; /* Hver række får automatisk højde */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; /* auto højde*/
     margin-top: 5rem;
   }
 
-  /* Juster rækkefølgen af elementerne på mobil */
   .text-video {
-    order: 1; /* Tekst vises først */
+    order: 1;
   }
   .youtube_container {
     order: 2;
   }
 
   .billede_video {
-    order: 3; /* Billede vises efter tekst */
+    order: 3;
   }
 
   .video {
-    order: 4; /* Video vises sidst */
+    order: 4;
+  }
+  .lotti_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-inline: 4%;
+    margin-top: 3rem;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #ffff;
+    border: 2px solid#fa1e1e;
+    margin-bottom: 5rem;
   }
 
-  /******** Footer ********/
+  /******** Footer ***************************/
   .gridfooter_2 {
     display: grid;
     grid-template-columns: 1fr;

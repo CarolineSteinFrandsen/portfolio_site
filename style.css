@@ -9,6 +9,7 @@ body {
 }
 
 /**************************************************************** Desktop *******************************************/
+
 /*********** typewriter hero ************/
 .typerwriter-text {
   display: flex;
@@ -17,13 +18,13 @@ body {
   height: 40vh;
   margin: 0;
   margin-top: 10rem;
-  margin-bottom: 0rem;
+  margin-bottom: -1rem;
 }
 
 #typewriter {
   white-space: pre; /* Bevarer linjeskift */
   overflow: hidden;
-  display: inline-block;
+  display: inline-block; /* tekst forbliver 2 linjer */
   font-size: 5.5rem;
   color: #fa1e1e;
   text-align: center;
@@ -119,24 +120,13 @@ body {
   margin-bottom: 1rem;
 }
 
-/******** forside grid sekton2 ***********/
-.forsidegrid2 {
-  display: grid;
-  gap: 10px;
-  margin-inline: 8%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* gør grid responsivt antal col skærm bred*/
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  align-items: center;
-}
-
-/* .lottiimg {
+.lottiimg {
   width: 100%;
   overflow: hidden;
   z-index: -1;
   position: relative;
   display: flex;
-} */
+}
 
 .grid-item {
   background-color: white;
@@ -256,7 +246,6 @@ body {
   font-family: "Montserrat";
   font-weight: 400;
   line-height: 1.4;
-  text-align: justify;
   margin-right: 2rem;
   word-spacing: -3px;
 }
@@ -422,7 +411,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 2rem;
   width: 25%;
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 .color {
   background-color: #d1cac1;
@@ -526,7 +515,7 @@ body {
   border: 5px solid #fa1e1e;
 }
 .carousel-container {
-  position: relative;
+  position: relative; /* fordi tekst absolut */
   display: flex;
   overflow-x: scroll;
   margin-top: 6.5rem;
@@ -584,6 +573,7 @@ body {
   font-family: "Inter";
   font-weight: 300;
 }
+
 /******* Tema 4 *********/
 .tema4mb {
   width: 45%;
@@ -680,7 +670,7 @@ body {
   color: #fa1e1e;
 }
 .logo5 {
-  width: 15%;
+  width: 13%;
   margin-left: 2rem;
   margin-top: 1rem;
 }
@@ -700,8 +690,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Sørger for at teksten ikke går udenfor billedet */
-  transition: all 0.3s ease; /* Overgange for effekterne */
+  overflow: hidden; /* teksten % udenfor billedet */
+  transition: all 0.3s ease; /* Overgange */
   position: relative;
 }
 
@@ -720,15 +710,15 @@ body {
   font-size: 24px;
   font-weight: 300;
   opacity: 0; /* Start skjult */
-  transition: opacity 0.3s ease; /* Gør teksten synlig ved hover */
+  transition: opacity 0.3s ease; /* synlig ved hover */
   font-family: "Inter";
 }
 .billede_wireframes:hover img {
-  opacity: 0.5; /* Gør billedet lettere ved hover */
+  opacity: 0.5; /* fade ved hover */
 }
 
 .billede_wireframes:hover .hover-text_wireframes {
-  opacity: 1; /* Gør teksten synlig ved hover */
+  opacity: 1; /* tekst synlig  */
 }
 .overskift-wireframes2 {
   font-family: "montserrat";
@@ -742,7 +732,7 @@ body {
   color: #fa1e1e;
   font-weight: 200;
   margin-right: 56rem;
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 .videoindhold_knap {
   display: inline-block;
@@ -754,7 +744,7 @@ body {
   letter-spacing: 1px;
   transition: border 0.3s ease, color 0.3s ease;
   font-size: 16px;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-top: 0.5rem;
   margin-bottom: 8rem;
 }
@@ -769,24 +759,22 @@ body {
   font-weight: 500;
   font-family: "Montserrat";
   color: #fa1e1e;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-top: 2rem;
 }
+
 /******** passions site tema 5 **********/
 
-/* Styling for billede */
 .billede_video img {
   width: 100%;
   height: 100%;
 }
 
-/* Styling for video */
 .responsiv-video {
   width: 100%;
   height: 100%;
 }
 
-/* Styling for tekst */
 .tekst-video {
   padding: 10px;
 }
@@ -891,7 +879,7 @@ footer {
   transform: scale(1.1);
 }
 
-/************************************************ Media ***********************************************/
+/************************************************ Media *************************************************************************/
 
 /***************************************** Mellemstore skærme **************************************/
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -906,6 +894,7 @@ footer {
     font-family: "montserrat";
     font-weight: 500;
     color: #312e2e;
+    margin-top: 1rem;
   }
   .forside_h2 {
     font-size: 23px;
@@ -933,7 +922,7 @@ footer {
     display: grid;
     gap: 9px;
     margin-inline: 8%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* gør grid responsivt ved at tilpasse antallet af kolonner til skærmens bredde.*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* respons ant kol skærmens bredde.*/
     margin-top: 0.5rem;
     margin-bottom: 2rem;
     align-items: center;
@@ -950,7 +939,7 @@ footer {
     font-family: "montserrat";
   }
 
-  /******** Om mig**********/
+  /******** Om mig*******************************/
   .logoCV {
     width: 90%;
     margin-bottom: 2rem;
@@ -986,7 +975,7 @@ footer {
     transition: border 0.3s ease, color 0.3s ease;
   }
 
-  /****** Tema 2 *******/
+  /****** Tema 2 *************************/
   .tekst_projekt {
     font-size: 18px;
     font-family: "Inter";
@@ -1016,7 +1005,6 @@ footer {
     font-family: "Montserrat";
     font-weight: 400;
     line-height: 1.4;
-    text-align: justify;
     margin-right: 2rem;
     word-spacing: -3px;
   }
@@ -1048,7 +1036,7 @@ footer {
     margin-top: 4rem;
   }
 
-  /********* Tema 3 **********/
+  /********* Tema 3 ********************************/
   .mobil_tekst4 {
     font-size: 24px;
     font-family: "Inter";
@@ -1144,9 +1132,10 @@ footer {
     margin-bottom: 3rem;
   }
   .grid-item_tema3 img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    padding-left: 3rem;
+    padding-left: 0rem;
+    margin-top: 2rem;
   }
 
   .grid-item_tema3 {
@@ -1179,8 +1168,21 @@ footer {
     font-size: 30px;
     margin-bottom: -1rem;
   }
+  .logo_tema3 {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: 25%;
+    margin-left: 3rem;
+  }
+  .hovertekst {
+    color: #fa1e1e;
+    font-size: 24px;
+    font-family: "Inter";
+    font-weight: 300;
+  }
 
-  /********** Tema 4 ***********/
+  /********** Tema 4 ****************************************/
   .img_1 {
     margin-left: 0.8rem;
     margin-bottom: -1rem;
@@ -1231,7 +1233,7 @@ footer {
     margin-left: 1rem;
   }
   .tekst_projekt_state {
-    font-size: 22px;
+    font-size: 19px;
     font-family: "Inter";
     font-weight: 200;
     margin-bottom: 1rem;
@@ -1240,7 +1242,7 @@ footer {
     margin-right: 2rem;
   }
   .tekst_projekt_state2 {
-    font-size: 22px;
+    font-size: 19px;
     font-family: "Inter";
     font-weight: 200;
     margin-bottom: 3rem;
@@ -1249,7 +1251,7 @@ footer {
     margin-right: 2rem;
   }
 
-  /************** Tema 5 *********/
+  /************** Tema 5 ********************************/
   .grid-item_tema5 img {
     max-width: 100%;
     height: auto;
@@ -1297,8 +1299,22 @@ footer {
     margin-left: 2rem;
     margin-top: 0rem;
   }
+  .videoindhold_knap {
+    display: inline-block;
+    text-decoration: none;
+    color: #fa1e1e;
+    border-bottom: 1.5px solid #fa1e1e;
+    font-weight: 400;
+    font-family: "Inter";
+    letter-spacing: 1px;
+    transition: border 0.3s ease, color 0.3s ease;
+    font-size: 16px;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 8rem;
+  }
 
-  /******** passions site ********/
+  /******** passions site *******************************/
   .h2_video {
     font-size: 30px;
     font-weight: 500;
@@ -1341,12 +1357,37 @@ footer {
     margin-bottom: 1rem;
     margin-left: 0;
   }
+  .text_footerleft {
+    margin-top: 2rem;
+    text-align: center;
+    color: #fa1e1e;
+    text-decoration: 1px #312e2e underline;
+    text-underline-offset: 6px;
+    font-size: 14px;
+    font-family: "Inter";
+  }
+  .text_footerleft:hover {
+    color: #312e2e;
+    text-decoration: 1px #fa1e1e underline;
+    transform: scale(1.1);
+  }
+  .footerknap {
+    display: inline-block;
+    text-decoration: none;
+    color: #fa1e1e;
+    border-bottom: 1.5px solid#312e2e;
+    font-weight: 400;
+    font-family: "Inter";
+    letter-spacing: 1px;
+    transition: border 0.3s ease, color 0.3s ease;
+    font-size: 14px;
+  }
 }
 
 /****************************************** små tablet og tablets størrelse *******************************************/
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  /********* Forside *********/
+  /********* Forside *******************/
 
   .lilletekst {
     font-size: 14px;
@@ -1359,6 +1400,7 @@ footer {
     font-family: "montserrat";
     font-weight: 500;
     color: #312e2e;
+    margin-top: 0rem;
   }
   .forside_h2 {
     font-size: 23px;
@@ -1386,7 +1428,7 @@ footer {
     display: grid;
     gap: 8px;
     margin-inline: 8%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* gør grid responsivt ved at tilpasse antallet af kolonner til skærmens bredde.*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* respons ant kol skærmens bredde.*/
     margin-top: 0.5rem;
     margin-bottom: 2rem;
     align-items: center;
@@ -1395,15 +1437,15 @@ footer {
     white-space: pre; /* Bevarer linjeskift */
     overflow: hidden;
     display: inline-block;
-    font-size: 4rem; /* Gør teksten større */
-    color: #fa1e1e; /* Tekstfarve */
-    text-align: center; /* Justerer tekst centralt */
+    font-size: 4rem;
+    color: #fa1e1e;
+    text-align: center;
     justify-content: center;
     font-weight: 550;
     font-family: "montserrat";
   }
 
-  /******** Om mig**********/
+  /******** Om mig*****************************/
   .logoCV {
     width: 90%;
     margin-bottom: 2rem;
@@ -1439,7 +1481,8 @@ footer {
     transition: border 0.3s ease, color 0.3s ease;
   }
 
-  /****** Tema 2 *******/
+  /****** Tema 2 *******************************/
+
   .tekst_projekt {
     font-size: 14px;
     font-family: "Inter";
@@ -1469,7 +1512,6 @@ footer {
     font-family: "Montserrat";
     font-weight: 400;
     line-height: 1.4;
-    text-align: justify;
     margin-right: 2rem;
     word-spacing: -3px;
   }
@@ -1501,7 +1543,8 @@ footer {
     margin-top: 4rem;
   }
 
-  /********* Tema 3 **********/
+  /********* Tema 3 *****************************/
+
   .mobil_tekst4 {
     font-size: 23px;
     font-family: "Inter";
@@ -1539,6 +1582,13 @@ footer {
     justify-content: center;
     margin-top: 5rem;
     margin-bottom: 12rem;
+  }
+  .logo_tema3 {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 240px;
+    margin-left: 2rem;
   }
   .overskift_projekt-gridh2 {
     font-size: 30px;
@@ -1632,8 +1682,14 @@ footer {
     font-size: 30px;
     margin-bottom: -1rem;
   }
+  .hovertekst {
+    color: #fa1e1e;
+    font-size: 23px;
+    font-family: "Inter";
+    font-weight: 300;
+  }
+  /********** Tema 4 ********************************/
 
-  /********** Tema 4 ***********/
   .img_1 {
     margin-left: 0.8rem;
     margin-bottom: -1rem;
@@ -1702,7 +1758,8 @@ footer {
     margin-right: 2rem;
   }
 
-  /************** Tema 5 *********/
+  /************** Tema 5 **********************/
+
   .grid-item_tema5 img {
     max-width: 100%;
     height: auto;
@@ -1751,7 +1808,7 @@ footer {
     margin-top: 0rem;
   }
 
-  /******** passions site ********/
+  /******** passions site *************************/
   .h2_video {
     font-size: 30px;
     font-weight: 500;
@@ -1795,6 +1852,7 @@ footer {
     margin-left: 0;
   }
 }
+
 /********************************************** Mobil **************************************/
 
 @media screen and (max-width: 768px) {
@@ -1810,9 +1868,9 @@ footer {
     white-space: pre; /* Bevarer linjeskift */
     overflow: hidden;
     display: inline-block;
-    font-size: 1.7rem; /* Gør teksten større */
-    color: #fa1e1e; /* Tekstfarve */
-    text-align: center; /* Justerer tekst centralt */
+    font-size: 1.7rem;
+    color: #fa1e1e;
+    text-align: center;
     justify-content: center;
     font-weight: 550;
     margin-top: 4rem;
@@ -1820,7 +1878,7 @@ footer {
   }
 
   #typewriter::after {
-    content: "";
+    content: ""; /* markør */
     display: inline-block;
     width: 2px;
     height: 2rem;
@@ -1914,7 +1972,7 @@ footer {
     font-weight: 400;
   }
 
-  /************ om mig side ***********/
+  /************ om mig side **********************/
   .billedeCV {
     width: 100%;
     border: 3px solid #fa1e1e;
@@ -1949,7 +2007,7 @@ footer {
     transition: border 0.3s ease, color 0.3s ease;
   }
 
-  /********** Tema 2 *********/
+  /********** Tema 2 ************************/
   .tema_h3 {
     font-size: 13px;
     font-family: "Inter";
@@ -2063,7 +2121,7 @@ footer {
     margin-inline: 0;
   }
 
-  /******** tema 3 *********/
+  /******** tema 3 ************************/
 
   .grid-item_tema3-4 img {
     justify-content: center;
@@ -2148,7 +2206,7 @@ footer {
     font-size: 17px;
     font-family: "Inter";
     font-weight: 300;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     text-align: start;
     word-spacing: normal;
     margin-right: 2rem;
@@ -2188,7 +2246,7 @@ footer {
     display: flex;
     padding-top: 3rem;
     padding-bottom: 5rem;
-    width: 200px;
+    width: 160px;
     margin-left: 3rem;
   }
   .grid-item_tema3 img {
@@ -2196,287 +2254,290 @@ footer {
     height: auto;
     padding-left: 1rem;
   }
-}
-.tekst_projekt_layout {
-  font-size: 14px;
-  font-family: "Inter";
-  font-weight: 200;
-  margin-bottom: 1rem;
-  text-align: start;
-  word-spacing: normal;
-  margin-right: 2rem;
-}
-.tekst_projekt_layout2 {
-  font-size: 14px;
-  font-family: "Inter";
-  font-weight: 200;
-  margin-bottom: 1rem;
-  text-align: start;
-  word-spacing: normal;
-  margin-right: 2rem;
-}
 
-/******* Tema 4 *******/
-.img_1 {
-  margin-left: 0.8rem;
-  margin-bottom: -3rem;
-  width: 18%;
-  padding-top: 2rem;
-}
-.img_2 {
-  width: 18%;
-  margin-top: 1rem;
-  margin-bottom: -3rem;
-}
+  .tekst_projekt_layout {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-align: start;
+    word-spacing: normal;
+    margin-right: 2rem;
+  }
+  .tekst_projekt_layout2 {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-align: start;
+    word-spacing: normal;
+    margin-right: 2rem;
+  }
 
-.img_3 {
-  margin-left: -1rem;
-  width: 39%;
-  margin-top: 2rem;
-}
+  /******* Tema 4 ************************/
+  .img_1 {
+    margin-left: 0.8rem;
+    margin-bottom: -3rem;
+    width: 18%;
+    padding-top: 2rem;
+  }
+  .img_2 {
+    width: 18%;
+    margin-top: 1rem;
+    margin-bottom: -3rem;
+  }
 
-.img_4 {
-  margin-left: 1rem;
-  width: 35%;
-  margin-top: 1rem;
-}
-.img_5 {
-  width: 40%;
-  margin-top: 0.5rem;
-  margin-left: 0;
-}
-.img_6 {
-  margin-right: 0rem;
-  width: 102%;
-  margin-top: 0.5rem;
-  margin-left: -1rem;
-}
-.img_7 {
-  margin-left: 0.5rem;
-  width: 45%;
-  margin-top: 1rem;
-  padding-bottom: 2rem;
-}
-.img_8 {
-  margin-top: 1rem;
-  width: 40%;
-  padding-bottom: 2rem;
-}
-.logo4 {
-  width: 260px;
-  margin-left: 1rem;
-}
-.grid-item_tema4 img {
-  width: 100%;
-  height: auto;
-  margin-left: 0.1rem;
-}
-.tekst_projekt_state {
-  font-size: 14px;
-  font-family: "Inter";
-  font-weight: 200;
-  margin-bottom: 1rem;
-  text-align: start;
-  word-spacing: normal;
-  margin-right: 2rem;
-}
-.tekst_projekt_state2 {
-  font-size: 14px;
-  font-family: "Inter";
-  font-weight: 200;
-  margin-bottom: 0.5rem;
-  text-align: start;
-  word-spacing: normal;
-  margin-right: 2rem;
-}
+  .img_3 {
+    margin-left: -1rem;
+    width: 39%;
+    margin-top: 2rem;
+  }
 
-/******* Tema 5 ************/
-.grid-item_tema5 img {
-  width: 80%;
-  height: auto;
-  padding-left: 0;
-  margin-left: 2rem;
-}
-.mobil_tekst6 {
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 1.3;
-  text-align: start;
-  word-spacing: normal;
-  margin-inline: 5%;
-  margin-left: 1rem;
-  margin-right: 4rem;
-  margin-bottom: 2rem;
-  margin-top: -1rem;
-}
-.color2 {
-  margin-top: 2rem;
-  margin-bottom: -5rem;
-  margin-inline: 1%;
-}
-.logo5 {
-  width: 18%;
-}
-.logo_tema5 {
-  display: flex;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  margin-right: 2rem;
-  margin-left: 2.5rem;
-}
-.billede_wireframes {
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .img_4 {
+    margin-left: 1rem;
+    width: 35%;
+    margin-top: 1rem;
+  }
+  .img_5 {
+    width: 40%;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+  .img_6 {
+    margin-right: 0rem;
+    width: 102%;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+  }
+  .img_7 {
+    margin-left: 0.5rem;
+    width: 45%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .img_8 {
+    margin-top: 1rem;
+    width: 40%;
+    padding-bottom: 2rem;
+  }
+  .logo4 {
+    width: 260px;
+    margin-left: 1rem;
+  }
+  .grid-item_tema4 img {
+    width: 100%;
+    height: auto;
+    margin-left: 0.1rem;
+  }
+  .tekst_projekt_state {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-align: start;
+    word-spacing: normal;
+    margin-right: 2rem;
+  }
+  .tekst_projekt_state2 {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+    text-align: start;
+    word-spacing: normal;
+    margin-right: 2rem;
+  }
 
-.billede_wireframes img {
-  max-width: 100%; /* Billederne fylder ikke mere end containerens bredde */
-  height: auto;
-  border: 3px solid #fa1e1e;
-}
-.overskift-wireframes2 {
-  font-family: "montserrat";
-  font-weight: 400;
-  font-size: 22px;
-  margin-left: 0rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-.hover-text_wireframes {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fa1e1e;
-  font-size: 15px;
-  font-weight: 300;
-  opacity: 0; /* Start skjult */
-  transition: opacity 0.3s ease; /* Gør teksten synlig ved hover */
-  font-family: "Inter";
-}
-.tekst_videoindhold {
-  font-size: 18px;
-  font-family: "Inter";
-  color: #fa1e1e;
-  font-weight: 200;
-  margin-right: 5rem;
-  margin-left: 1rem;
-}
-.videoindhold_knap {
-  display: inline-block;
-  text-decoration: none;
-  color: #fa1e1e;
-  border-bottom: 1.5px solid #fa1e1e;
-  font-weight: 400;
-  font-family: "Inter";
-  letter-spacing: 1px;
-  transition: border 0.3s ease, color 0.3s ease;
-  font-size: 12px;
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 3rem;
-}
+  /******* Tema 5 **************************/
 
-.videoindhold_knap:hover {
-  color: #312e2e;
-  border-bottom: 1.5px solid #312e2e;
-  transform: scale(1.1);
-}
-.h2_videoindhold {
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Montserrat";
-  color: #fa1e1e;
-  margin-left: 1rem;
-  margin-top: 0rem;
-}
+  .grid-item_tema5 img {
+    width: 80%;
+    height: auto;
+    padding-left: 0;
+    margin-left: 2rem;
+  }
+  .mobil_tekst6 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: start;
+    word-spacing: normal;
+    margin-inline: 5%;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+  }
+  .color2 {
+    margin-top: 2rem;
+    margin-bottom: -5rem;
+    margin-inline: 1%;
+  }
+  .logo5 {
+    width: 18%;
+  }
+  .logo_tema5 {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 2.5rem;
+  }
+  .billede_wireframes {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/****** Passionssite tema 5 ******/
-.h2_video {
-  font-size: 21px;
-  font-weight: 500;
-  font-family: "Montserrat";
-  margin-top: -1rem;
-}
-.tekst-video1 {
-  font-size: 14px;
-  font-weight: 300;
-  font-family: "Inter";
-}
-.tekst-video2 {
-  font-size: 14px;
-  font-weight: 300;
-  font-family: "Inter";
-}
-.link_youtube-h2 {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Inter";
-}
-.website_link_video {
-  font-size: 14px;
-}
-.youtube_container {
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-}
+  .billede_wireframes img {
+    max-width: 100%; /* fylder kun cont bredde */
+    height: auto;
+    border: 3px solid #fa1e1e;
+  }
+  .overskift-wireframes2 {
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .hover-text_wireframes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fa1e1e;
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0; /* Start skjult */
+    transition: opacity 0.3s ease; /* synlig ved hover */
+    font-family: "Inter";
+  }
+  .tekst_videoindhold {
+    font-size: 18px;
+    font-family: "Inter";
+    color: #fa1e1e;
+    font-weight: 200;
+    margin-right: 5rem;
+    margin-left: 1rem;
+  }
+  .videoindhold_knap {
+    display: inline-block;
+    text-decoration: none;
+    color: #fa1e1e;
+    border-bottom: 1.5px solid #fa1e1e;
+    font-weight: 400;
+    font-family: "Inter";
+    letter-spacing: 1px;
+    transition: border 0.3s ease, color 0.3s ease;
+    font-size: 12px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
 
-/********** Footer **********/
-.text_footerleft {
-  margin-top: 2rem;
-  text-align: center;
-  color: #fa1e1e;
-  text-decoration: 1px #312e2e underline;
-  text-underline-offset: 6px;
-  font-size: 12px;
-  font-family: "Inter";
-}
-.text_footerleft:hover {
-  color: #312e2e;
-  text-decoration: 1px #fa1e1e underline;
-  transform: scale(1.1);
-}
-.footerknap {
-  display: inline-block;
-  text-decoration: none;
-  color: #fa1e1e;
-  border-bottom: 1.5px solid#312e2e;
-  font-weight: 400;
-  font-family: "Inter";
-  letter-spacing: 1px;
-  transition: border 0.3s ease, color 0.3s ease;
-  font-size: 12px;
-}
-.footer_h2 {
-  font-size: 25px;
-  font-weight: 400;
-  font-family: "Montserrat";
-}
-.footer_p1 {
-  font-size: 15px;
-  font-weight: 350;
-  font-family: "Inter";
-  margin-top: -0.5rem;
-}
-.footer_p2 {
-  font-size: 14px;
-  font-weight: 300;
-  font-family: "Inter";
-  margin-top: 2rem;
-}
-/****** carousel *******/
-.carousel-slide img {
-  width: 50vw;
-  height: 50vh;
-  object-fit: cover;
-  margin-bottom: 2rem;
-  border: 5px solid #fa1e1e;
-}
-.hovertekst {
-  color: #fa1e1e;
-  font-size: 18px;
-  font-family: "Inter";
-  font-weight: 300;
+  .videoindhold_knap:hover {
+    color: #312e2e;
+    border-bottom: 1.5px solid #312e2e;
+    transform: scale(1.1);
+  }
+  .h2_videoindhold {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    color: #fa1e1e;
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+
+  /****** Passionssite tema 5 **********************/
+  .h2_video {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    margin-top: -1rem;
+  }
+  .tekst-video1 {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Inter";
+  }
+  .tekst-video2 {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Inter";
+  }
+  .link_youtube-h2 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+  .website_link_video {
+    font-size: 14px;
+  }
+  .youtube_container {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  /********** Footer ******************************/
+  .text_footerleft {
+    margin-top: 2rem;
+    text-align: center;
+    color: #fa1e1e;
+    text-decoration: 1px #312e2e underline;
+    text-underline-offset: 6px;
+    font-size: 12px;
+    font-family: "Inter";
+  }
+  .text_footerleft:hover {
+    color: #312e2e;
+    text-decoration: 1px #fa1e1e underline;
+    transform: scale(1.1);
+  }
+  .footerknap {
+    display: inline-block;
+    text-decoration: none;
+    color: #fa1e1e;
+    border-bottom: 1.5px solid#312e2e;
+    font-weight: 400;
+    font-family: "Inter";
+    letter-spacing: 1px;
+    transition: border 0.3s ease, color 0.3s ease;
+    font-size: 12px;
+  }
+  .footer_h2 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Montserrat";
+  }
+  .footer_p1 {
+    font-size: 15px;
+    font-weight: 350;
+    font-family: "Inter";
+    margin-top: -0.5rem;
+  }
+  .footer_p2 {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Inter";
+    margin-top: 2rem;
+  }
+
+  /****** carousel **************************/
+  .carousel-slide img {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 5px solid #fa1e1e;
+  }
+  .hovertekst {
+    color: #fa1e1e;
+    font-size: 15px;
+    font-family: "Inter";
+    font-weight: 300;
+  }
 }
